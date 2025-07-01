@@ -10,8 +10,8 @@
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
-    "predeploy": "next build && next export",
-    "deploy": "npm run build && gh-pages -d dist",
+    "predeploy": "next build",
+    "deploy": "gh-pages -d out",
     "update": "git add . && git commit -m 'update' && git push && npm run build && npm run deploy"
   },
   "dependencies": {
